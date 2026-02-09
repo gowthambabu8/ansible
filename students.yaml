@@ -1,0 +1,18 @@
+- firstname: "Gowtham"
+  lastname: "Babu"
+  address:
+  - type: "permanent"
+    flatno: 103
+    street: "gandhi nagar"
+  - type: "contact"
+    flatno: 104
+    street: "netaji street"
+- firstname: "Sravs"
+  lastname: "Babu"
+  address:
+  - type: "permanent"
+    flatno: 103
+    street: "gandhi nagar"
+  - type: "contact"
+    flatno: 104
+    street: "netaji street"

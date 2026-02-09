@@ -1,0 +1,30 @@
+<Students>
+    <Student>
+        <Firstname>Gowtham</Firstname>
+        <LastName>Babu</LastName>
+        <Addresses>
+            <PermAddress>
+                <FlatNo>103</FlatNo>
+                <Street>Gandhi Street<Street>
+            </PermAddress>
+            <ContactAddress>
+                <FlatNo>103</FlatNo>
+                <Street>Gandhi Street<Street>
+            </ContactAddress>
+        </Addresses>
+    </Student>
+    <Student>
+        <Firstname>Gowtham1</Firstname>
+        <LastName>Babu1</LastName>
+        <Addresses>
+            <PermAddress>
+                <FlatNo>103</FlatNo>
+                <Street>Gandhi Street<Street>
+            </PermAddress>
+            <ContactAddress>
+                <FlatNo>103</FlatNo>
+                <Street>Gandhi Street<Street>
+            </ContactAddress>
+        </Addresses>
+    </Student>
+</Students>

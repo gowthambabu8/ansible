@@ -1,0 +1,38 @@
+{
+  "students": [
+    {
+      "firstName": "ABC",
+      "lastName": "XYZ",
+      "_comment": "Below is the addresses list",
+      "addresses": [
+        {
+          "type": "permanent",
+          "flatNo": 103
+        },
+        {
+          "type": "contact",
+          "flatNo": 104
+        }
+      ],
+      "skills": [
+        "unix",
+        "ansible",
+        "terraform"
+      ]
+    },
+    {
+      "firstName": "ABC",
+      "lastName": "XYZ",
+      "addresses": [
+        {
+          "type": "permanent",
+          "flatNo": 103
+        },
+        {
+          "type": "contact",
+          "flatNo": 104
+        }
+      ]
+    }
+  ]
+}

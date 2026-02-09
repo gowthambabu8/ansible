@@ -1,0 +1,51 @@
+ONS....
+
+1. No idempotent
+2. No error handling
+3. little complex
+4. large scale servers handling is tough
+5. distribution specific, homogenous.
+
+scp mongodb.repo mongodb.sh ec2-user@<private-ip>/tmp/git-repo - copy files from 1 server to another server.
+ssh ec2-user@<private-ip> 'touch sample_file.txt' - creates sample file in another server.
+
+configuration management:
+-------------------------
+provisioning server -> baseline it according to our needs.
+
+1. installing programming languages.
+2. creating system users and folders.
+3. installing some packages.
+4. downloading source code.
+5. installing dependencies.
+6. creating systemctl service.
+7. enable and starting the services.
+
+CRUD of configuration.
+* 2 types of modes.
+	PUSH - to ruunning servers from CM server.
+		1. using ssh protocol they will send updates.
+		2. no agent software.
+	PULL - from CM server. we need agent server in each node.
+		1. unneccessary installation
+		2. resources wastage.
+		3. unneccessary traffic
+		4. no adhoc updates.
+		5. new protocol to connet to CM server.
+* before we have chef, puppet but because of push model by ansible it became popular.
+* Ansible is developed in Python. it is command line tool.
+* protocol, port, username, password.IP
+* dnf install ansible -y
+* ansible all -i <ip_address>, -e ansible_user=ec2-user -e ansible_password=DevOps321 -m ping
+* ansible all -i <ip_address>, -e ansible_user=ec2-user -e ansible_password=DevOps321 -m dnf -a "name=nginx state=installed" -> run as normal user
+* ansible all -i <ip_address>, -e ansible_user=ec2-user -e ansible_password=DevOps321 -b -m dnf -a "name=nginx state=installed" -> run as super user
+* ansible all -i <ip_address>, -e ansible_user=ec2-user -e ansible_password=DevOps321 -b -m service -a "name=nginx state=started" 
+* linux commands - ansible modules, collections.
+* green - success but no change
+* yellow - changed - state also changed
+* red- error - no change to state
+* All the commands we will keep in playbook. It uses yaml structure.
+* DTO - data transfer objects
+########
+Inventory:
+Whioch servers ansible has to to target.
