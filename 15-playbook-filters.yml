@@ -7,6 +7,21 @@
       name: "catalogue"
       duration: "140HRS"
       location: "Hyderabad"
+    tagsList:
+      [
+        {
+            "key": "name",
+            "value": "catalogue"
+        },
+        {
+            "key": "duration",
+            "value": "140HRS"
+        },
+        {
+            "key": "location",
+            "value": "Hyderabad"
+        }
+    ]
   tasks:
   - name: print strings
     ansible.builtin.debug:
@@ -17,3 +32,6 @@
   - name: convert map to list
     ansible.builtin.debug:
       msg: "{{ tagsMap | dict2items }}"
+  - name: convert list to dict/map
+    ansible.builtin.debug:
+      msg: "{{ tagsList | items2dict }}"
