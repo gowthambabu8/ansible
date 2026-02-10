@@ -48,4 +48,4 @@ CRUD of configuration.
 * DTO - data transfer objects
 ########
 Inventory:
-Whioch servers ansible has to to target.
+Which servers ansible has to to target.
