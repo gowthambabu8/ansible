@@ -11,8 +11,8 @@
       - Kinnera
   - name: install multiple packages
     ansible.builtin.package:
-      - name: "{{ item }}"
-        state: present
+      name: "{{ item }}"
+      state: present
     loop:
       - nginx
       - mysql
