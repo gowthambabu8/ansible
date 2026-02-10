@@ -8,4 +8,4 @@
       register: user_outputs
     - name: print user_outputs
       ansible.builtin.debug:
-        msg: {{ user_outputs }}
+        msg: "{{ user_outputs }}"
