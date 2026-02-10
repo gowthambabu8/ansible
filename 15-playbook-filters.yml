@@ -1,6 +1,7 @@
 - name: filters
   hosts: local
   connection: local
+  become: true
   vars:
     topics: linux, shell, ansible, terraform
     course: "DevSecOps with ansible"
