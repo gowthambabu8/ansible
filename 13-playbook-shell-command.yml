@@ -1,0 +1,7 @@
+- name: shell vs command
+  hosts: local
+  connection: local
+  tasks:
+    - name: pipe operator
+      ansible.builtin.command: cat /etc/password | grep root
+      

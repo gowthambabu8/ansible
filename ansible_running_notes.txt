@@ -49,3 +49,20 @@ CRUD of configuration.
 ########
 Inventory:
 Which servers ansible has to to target.
+* we can take outputs into register variable
+#####
+Ansible command vs shell module:
+shell:
+* entire server we can access.
+* less secure
+* can access default variables.
+* slightly slower as compared to command because of shell invocation.
+* redirections are allowed.
+* ansible.builtin.shell
+command:
+* only specific commands we can execute
+* more secure
+* cannot access default variables
+* faster as shell invocation is not required.
+* redirections are not allowed.
+* ansible.builtin.command
