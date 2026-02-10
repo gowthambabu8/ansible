@@ -52,7 +52,7 @@
       msg: "{{ course | lower }}"
   - name: install netaddr package 
     ansible.builtin.package:
-      name: "netaddr"
+      name: "python3.9-netaddr"
       state: present
   - name: validate ipv4
     ansible.builtin.debug:
