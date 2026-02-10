@@ -9,3 +9,10 @@
     - name: print user_outputs
       ansible.builtin.debug:
         msg: "{{ user_outputs }}"
+    
+    - name: copy content
+      ansible.builtin.shell: ls -ltr > files.txt
+      register: file_outputs
+    - name: print file_outputs
+      ansible.builtin.debug:
+        msg: "{{ file_outputs }}"
