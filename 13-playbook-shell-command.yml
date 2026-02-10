@@ -4,4 +4,8 @@
   tasks:
     - name: pipe operator
       #ansible.builtin.command: cat /etc/password | grep root
-      ansible.builtin.shell: cat /etc/password | grep root
+      ansible.builtin.shell: cat /etc/passwd | grep root
+      register: user_outputs
+    - name: print user_outputs
+      ansible.builtin.debug:
+        msg: {{ user_outputs }}
