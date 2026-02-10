@@ -8,9 +8,15 @@
   vars_prompt:
     - name: NAME
       prompt: "Enter your name: "
+      private: false
   tasks:
   - name: variables preference
-    vars:
-      NAME: "Ansible from TASK"
+    # vars:
+    #   NAME: "Ansible from TASK"
     ansible.builtin.debug:
       msg: "Hi {{ NAME }}"
+
+
+# 1. ARGUMENT
+# 2. TASK
+# 3. PROMPT
