@@ -1,0 +1,26 @@
+- name: data types
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "DevSecOps with AWS" # string
+    DURATION: 140 # integer/number
+    IS_LIVE: true # boolean
+    TOPICS: # list -/[]
+      - SHELL
+      - LINUX
+      - ANSIBLE 
+      - TERRAFORM
+      - DOCKER
+      - KUBERNATES
+    DETAILS: #map/dict
+      DURATION: "140HRS"
+      TRAINER: "Sivakumar"    
+  tasks:
+  - name: course details
+    ansible.builtin.debug:
+      msg: |
+        Course: {{ COURSE }}
+        Duration: {{ DURATION }}
+        Is Live: {{ IS_LIVE }}
+        Details: {{ DETAILS }}
+        Topics: {{ TOPICS }}
