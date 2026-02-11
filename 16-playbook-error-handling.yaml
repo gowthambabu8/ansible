@@ -9,3 +9,6 @@
   - name: user check user_output
     ansible.builtin.debug:
       msg: "{{ user_output }}"
+  - name: creatin user based on output value
+    ansible.builtin.command: useradd roboshop
+    when: user_output.rc != 0
