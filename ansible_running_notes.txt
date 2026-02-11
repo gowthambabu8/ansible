@@ -59,6 +59,7 @@ shell:
 * slightly slower as compared to command because of shell invocation.
 * redirections are allowed.
 * ansible.builtin.shell
+* ansible collections will make idempotent
 command:
 * only specific commands we can execute
 * more secure
@@ -66,3 +67,4 @@ command:
 * faster as shell invocation is not required.
 * redirections are not allowed.
 * ansible.builtin.command
+* ansible command will not make idempotent
