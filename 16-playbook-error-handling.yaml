@@ -5,4 +5,7 @@
   - name: create user
     ansible.builtin.command: id roboshop
     register: user_output
-    
+    ignore_errors: true
+  - name: user check user_output
+    ansible.builtin.debug:
+      msg: "{{ user_output }}"
