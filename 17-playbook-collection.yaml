@@ -1,0 +1,8 @@
+- name: create user using collections
+  hosts: local
+  connection: local
+  become: true
+  tasks:
+  - name: creating user
+    ansible.builtin.user:
+      name: johnd
